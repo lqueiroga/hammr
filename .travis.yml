@@ -4,3 +4,9 @@ python:
 install:
   - pip install .
 script: nosetests
+deploy:
+  provider: releases
+  api_key: $TOKEN
+  on:
+    branch: master
+    condition: "`git log -1 --pretty=%B` == $\"Hammr release\"*"
