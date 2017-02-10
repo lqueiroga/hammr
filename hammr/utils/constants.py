@@ -20,6 +20,7 @@ import tempfile
 
 VERSION="3.7.2-RC1"
 
+
 TMP_WORKING_DIR=tempfile.gettempdir() + os.sep + "hammr-" + str(os.getpid())
 HTTP_TIMEOUT=30
 
